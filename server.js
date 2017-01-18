@@ -15,6 +15,7 @@ else if (page == '/floor/1/bedroom') {
 res.write('Hey, this is a private area!');
 }
 else {
+	res.writeHead(404);
 	res.write('404. There\'s nothing here for you to see.');
 }
 res.end();
