@@ -14,6 +14,9 @@ res.write('You\'re in the wine cellar. These bottles are mine!');
 else if (page == '/floor/1/bedroom') {
 res.write('Hey, this is a private area!');
 }
+else {
+	res.write('404. There\'s nothing here for you to see.');
+}
 res.end();
 });
 server.listen(8080);
